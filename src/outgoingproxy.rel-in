@@ -6,6 +6,7 @@
   {ssl, "@ERLANG_LIB_VER_ssl@"},
   {mnesia, "@ERLANG_LIB_VER_mnesia@"},
   {crypto, "@ERLANG_LIB_VER_crypto@"},
+  {asn1, "@ERLANG_LIB_VER_asn1@"},
   {public_key, "@ERLANG_LIB_VER_public_key@"},
   {yxa, "%VERSION%"},
   {outgoingproxy, "%VERSION%"}

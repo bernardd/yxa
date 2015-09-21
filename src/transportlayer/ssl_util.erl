@@ -199,7 +199,7 @@ decode_ssl_rdnseq2([[H] | T], Res) when is_record(H, 'AttributeTypeAndValue') ->
     try
 	begin
 	    {ok, ATAVEnc} = ?PKIX_MODULE:encode('AttributeTypeAndValue', H),
-	    ?PKIX_MODULE:decode(?ATTRIBUTE_TYPE_AND_VALUE, list_to_binary(ATAVEnc))
+	    ?PKIX_MODULE:decode(?ATTRIBUTE_TYPE_AND_VALUE, ATAVEnc)
 	end of
 	{ok, ATAVDec} when is_record(ATAVDec, ?ATTRIBUTE_TYPE_AND_VALUE) ->
 	    case ATAVDec#?ATTRIBUTE_TYPE_AND_VALUE.value of
